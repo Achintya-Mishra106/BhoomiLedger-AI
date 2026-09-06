@@ -1,13 +1,26 @@
-    require("dotenv").config()
-    
-    const express = require("express")
-    const crypto = require("crypto")
-    const multer = require("multer")
-    const { PDFParse } = require("pdf-parse")
-    const { GoogleGenAI } = require("@google/genai")
-    const Groq = require("groq-sdk")
-    const supabase = require("./supabase")
+   require("dotenv").config()
+console.log("1 DOTENV OK")
 
+const express = require("express")
+console.log("2 EXPRESS OK")
+
+const crypto = require("crypto")
+console.log("3 CRYPTO OK")
+
+const multer = require("multer")
+console.log("4 MULTER OK")
+
+const { PDFParse } = require("pdf-parse")
+console.log("5 PDF OK")
+
+const { GoogleGenAI } = require("@google/genai")
+console.log("6 GOOGLE OK")
+
+const Groq = require("groq-sdk")
+console.log("7 GROQ OK")
+
+const supabase = require("./supabase")
+console.log("8 SUPABASE OK")
     const app = express()
 
     // ==========================================
